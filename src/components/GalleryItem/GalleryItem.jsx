@@ -3,7 +3,7 @@ import './GalleryItem.css';
 
 
 function GalleryItem({photo, putGalleryList}){
-    const [toggleDescription, setToggleDescription] = useState(false)
+    const [toggleDescription, setToggleDescription] = useState(true)
 
     const onSubmit = () => {
         putGalleryList(photo.id);
@@ -24,6 +24,8 @@ function GalleryItem({photo, putGalleryList}){
         <div className='.picture'>
             <li onClick={seeDescription}>
                 {seePhoto()}
+                Like:{photo.likes}
+                <button onClick = {onSubmit}>Like It!</button>
             </li>
         </div>
     )
