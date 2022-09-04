@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react';
+import Button from '@mui/material/Button';
 import './GalleryItem.css';
+
 
 
 function GalleryItem({photo, putGalleryList}){
@@ -21,12 +23,13 @@ function GalleryItem({photo, putGalleryList}){
     }
 
     return(
-        <div className='.picture'>
+        <div>
             <li onClick={seeDescription}>
                 {seePhoto()}
-                Like:{photo.likes}
-                <button onClick = {onSubmit}>Like It!</button>
+  
             </li>
+            Like:{photo.likes}
+                <Button variant="contained" color="secondary" value={photo.likes} onClick={(event) => onSubmit(event.target.value)}>Like It!</Button>
         </div>
     )
 
