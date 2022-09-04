@@ -1,16 +1,17 @@
 import {useState, useEffect } from "react";
 import GalleryItem from "../GalleryItem/GalleryItem";
 
-function GalleryList({galleryList, galleryItem}){
+function GalleryList({galleryList, putGalleryList}){
 
 
     // returns list from array
     return (
         <ul>
             <li>
-                {GalleryList.map (photo => {
+                {galleryList.map (photo => {
                     return <GalleryItem key = {photo.id}
-                    photo = {photo} />
+                    photo = {photo} 
+                    putGalleryList = {putGalleryList} />
                 
                 })}
             </li>

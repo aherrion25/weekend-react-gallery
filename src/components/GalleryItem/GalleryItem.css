@@ -1,0 +1,11 @@
+.picture{
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border: 8px solid #bfeee6;
+    width: 200px ;
+    padding: 12px 15px;
+    
+}
+
