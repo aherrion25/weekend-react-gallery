@@ -4,12 +4,12 @@ import './GalleryItem.css';
 
 
 
-function GalleryItem({photo, putGalleryList}){
-    const [toggleDescription, setToggleDescription] = useState(true)
+function GalleryItem({photo, putGalleryList, }){
+    const [toggleDescription, setToggleDescription] = useState(false)
 
-    const onSubmit = () => {
-        putGalleryList(photo.id);
-    };
+    // const onSubmit = () => {
+    //     putGalleryList(photo.id);
+    // };
     const seeDescription = () => {
         setToggleDescription(!toggleDescription)
     };
@@ -29,7 +29,7 @@ function GalleryItem({photo, putGalleryList}){
   
             </li>
             Like:{photo.likes}
-                <Button variant="contained" color="secondary" value={photo.likes} onClick={(event) => onSubmit(event.target.value)}>Like It!</Button>
+                <Button  onClick={() => putGalleryList(photo.id)}>Like It!</Button>
         </div>
     )
 
