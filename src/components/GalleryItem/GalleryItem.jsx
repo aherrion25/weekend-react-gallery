@@ -13,10 +13,10 @@ function GalleryItem({photo, putGalleryList, }){
     const [toggleDescription, setToggleDescription] = useState(false)
 
     return(
-        <Grid item sm={6} xl={4}>
-            <Card className='card' sx={{borderRadius: '5%'}} elevation={5}>
+        <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+            <Card className="card" sx={{borderRadius: '5%'}} elevation={5}>
                 <div className="cardInfo" onClick={() => setToggleDescription(!toggleDescription)}>
-                    {toggleDescription ?( <Typography className='cardDescription'>{photo.description}</Typography>)
+                    {toggleDescription ?( <Typography className="cardDescription">{photo.description}</Typography>)
                     : (<CardMedia component="img" height= "300px" image={photo.path} />)}
                 </div>
                 <CardActions>
