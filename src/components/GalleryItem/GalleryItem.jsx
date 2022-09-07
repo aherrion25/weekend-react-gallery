@@ -26,32 +26,5 @@ function GalleryItem({photo, putGalleryList, }){
             </Card>
         </Grid>
     )
-
-    // const onSubmit = () => {
-    //     putGalleryList(photo.id);
-    // };
-    // const seeDescription = () => {
-    //     setToggleDescription(!toggleDescription)
-    // };
-    // const seePhoto = () =>{
-    //     if (toggleDescription){
-    //         return <img src={photo.path}></img>
-    //     }
-    //     else{
-    //         return <p>{photo.description}</p>
-    //     }
-    // }
-
-    // return(
-    //     <div>
-    //         <li onClick={seeDescription}>
-    //             {seePhoto()}
-  
-    //         </li>
-    //         Like:{photo.likes}
-    //             <Button  onClick={() => putGalleryList(photo.id)}>Like It!</Button>
-    //     </div>
-    // )
-
 }
 export default GalleryItem;

@@ -13,17 +13,6 @@ function GalleryList({galleryList, putGalleryList,}){
                 return <GalleryItem key={photo.id} photo={photo} putGalleryList = {putGalleryList} />
             })}
         </Grid>
-
-        // <ul>
-        //     <li>
-        //         {galleryList.map ((photo) => {
-        //             return <GalleryItem key = {photo.id}
-        //             photo = {photo} 
-        //             putGalleryList = {putGalleryList} />
-                
-        //         })}
-        //     </li>
-        // </ul>
     )
 }
  export default GalleryList;
